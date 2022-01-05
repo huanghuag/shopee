@@ -105,7 +105,7 @@ class Client
         // v2
         $this->nodes['shop'] = new Nodes\Shop\Shop($this);
         $this->nodes['merchant'] = new Nodes\Merchant\Merchant($this);
-        $this->nodes['product'] = new Nodes\Product\Product($this);
+        $this->nodes['product'] = new Nodes\Product\GlobalProduct($this);
         $this->nodes['media'] = new Nodes\Media\Media($this);
         $this->nodes['logistics'] = new Nodes\Logistics\Logistics($this);
         $this->nodes['order'] = new Nodes\Order\Order($this);
@@ -119,6 +119,8 @@ class Client
         //$this->nodes['accountHealth'] = new Nodes\AccountHealth\Accounthealth($this);
         $this->nodes['publik'] = new Nodes\Publik\Publik($this);
         $this->nodes['shopCategory'] = new Nodes\ShopCategory\ShopCategory($this);
+        //全球站点产品服务
+        $this->nodes['globalProduct'] = new Nodes\GlobalProduct\GlobalProduct($this);
         // end
 
 
